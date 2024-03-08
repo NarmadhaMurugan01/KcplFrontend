@@ -178,11 +178,11 @@ const Sidebar = ({setSidebarOpen}) => {
               >
                 <div className="d-flex mt-2 align-items-center">
                   <MdInfoOutline className="icon" />
-                  <p   onClick={ isSmallScreen ? () => setSidebarOpen(false) :  undefined}
+                  {/* <p   onClick={ isSmallScreen ? () => setSidebarOpen(false) :  undefined}
                  
                    className="mb-0 ms-4 cate-text text-wrap">
                     Terms & Condition
-                  </p>
+                  </p> */}
                 </div>
               </Link>
             </li>
