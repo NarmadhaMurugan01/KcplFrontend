@@ -55,9 +55,14 @@ const Sidebar = ({setSidebarOpen}) => {
             <div className="ts-icons">
               <IoHeartOutline className="ts-icon" />
               <GoBell className="ts-icon" />
-              <Link to="/main/jobs">
+              {
+                authdata && (
+<Link to="/main/jobs">
               <FaRegUserCircle className="ts-icon text-white" />
-              </Link> 
+              </Link>
+                )
+              }
+               
              
             </div>
           </div>
