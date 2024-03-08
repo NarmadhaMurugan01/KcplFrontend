@@ -49,7 +49,7 @@ const Sidebar = ({setSidebarOpen}) => {
         <div className="">
           <div className="topside d-flex align-items-center justify-content-between">
             <Link to={'/'}>
-            <img src={logo} className="logo" alt="logo" />
+            {/* <img src={logo} className="logo" alt="logo" /> */}
             </Link>
            
             <div className="ts-icons">
