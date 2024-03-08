@@ -57,7 +57,7 @@ const Sidebar = ({setSidebarOpen}) => {
               <GoBell className="ts-icon" />
               {
                 authdata && (
-<Link to="/main/jobs">
+             <Link to="/main/jobs">
               <FaRegUserCircle className="ts-icon text-white" />
               </Link>
                 )
