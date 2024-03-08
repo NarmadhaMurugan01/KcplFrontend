@@ -22,7 +22,7 @@ import About from "./layouts/About";
 import ContactUs from "./layouts/ContactUs";
 import TermsPolicy from "./layouts/TermsPolicy";
 import Maintainence from "./layouts/Maintainence";
-
+import ResetPassword from '../src/auth/ResetPassword'
 
 function App() {
   const toast = useRef(null);
@@ -36,6 +36,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/ap" element={<DynamicInputFields />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/resetpassword" element={<ResetPassword />} />
           <Route path="/" element={<Main />}>
           <Route index element={<Maintainence />} />
             <Route path="/main/jobs" element={<Job />} />
