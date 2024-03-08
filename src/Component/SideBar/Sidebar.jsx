@@ -159,10 +159,10 @@ const Sidebar = ({setSidebarOpen}) => {
                 to="/main/About"
                 style={{ color: "#fff", textDecoration: "none" }}
               >
-                <div className="d-flex mt-2 align-items-center">
+                {/* <div className="d-flex mt-2 align-items-center">
                   <i class="fi fi-rr-building"></i>
                   <p  onClick={ isSmallScreen ? () => setSidebarOpen(false) :  undefined} className="mb-0 ms-4 cate-text text-wrap"> About Us </p>
-                </div>
+                </div> */}
               </Link>
             </li>
             <li
@@ -177,7 +177,7 @@ const Sidebar = ({setSidebarOpen}) => {
                 style={{ color: "#fff", textDecoration: "none" }}
               >
                 <div className="d-flex mt-2 align-items-center">
-                  <MdInfoOutline className="icon" />
+                  {/* <MdInfoOutline className="icon" /> */}
                   {/* <p   onClick={ isSmallScreen ? () => setSidebarOpen(false) :  undefined}
                  
                    className="mb-0 ms-4 cate-text text-wrap">
