@@ -1,0 +1,65 @@
+/* .s-middle1 {
+  border-bottom: 2px solid grey;
+} */
+
+.Sidebar {
+  top: 0;
+  left: 0;
+  border-radius: 0 10px 10px 0; /* Fixed typo in border-radius */
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  background: #1877f2;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px -3px,
+    rgba(0, 0, 0, 0.043) 0px 8px 10px 1px, rgba(0, 0, 0, 0.035) 0px 3px 14px 2px;
+  /* Use "s" for seconds, and specify the timing function "linear" */
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  background: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+.icon {
+  font-size: 20px;
+  /* margin-left: 14px; */
+}
+.open-caret {
+  display: none;
+}
+.ts-icons {
+  font-size: 20px;
+  margin-left: 15px;
+  display: none;
+}
+.cate-text {
+  display: none;
+}
+.Sidebar:hover {
+  width: 250px;
+}
+.Sidebar:hover .open-caret {
+  display: block;
+}
+.Sidebar:hover .cate-text {
+  display: block;
+}
+.Sidebar:hover .ts-icons {
+  display: block;
+}
+.Sidebar:hover .ts-icons {
+  display: block;
+}
+.ts-icon {
+  margin: 0px 5px;
+}
+/* .category:hover {
+  background-color: #68bcff;
+} */
+.category-type:hover {
+  background-color: #68bcff;
+}

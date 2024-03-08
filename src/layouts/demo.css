@@ -1,0 +1,142 @@
+body {
+    /* background: rgb(73, 43, 194); */
+}
+.container_demo{
+    width: 100%;
+    height: 100vh;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: rgb(73, 43, 194);
+}
+.form-Width{
+    width: 0px !important;
+}
+.labels0{
+    width: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+}
+.gender{
+    flex-direction: column;
+    width:0px ;
+}
+.dmo_diswidth{
+    width: fit-content;
+}
+.dmo_intercaste{
+    width: 150px;
+}
+.dmo_flex0{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dmo_gap{
+    margin: 0 20px;
+}
+.dmo_align{
+    align-items: center;
+}
+.profile-button {
+    /* background: rgb(73, 43, 194); */
+    box-shadow: none;
+    border: none
+}
+.delete-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+
+}
+
+.profile-button:hover {
+    background: rgb(73, 43, 194);
+}
+
+.profile-button:focus {
+    background: rgb(73, 43, 194);
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: rgb(73, 43, 194);
+    box-shadow: none
+}
+
+
+.back:hover {
+    color:  rgb(73, 43, 194);
+    cursor: pointer
+}
+.dmo_gDer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+}
+.labels {
+    /* width: 150px; */
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+}
+.dmo_name{
+    padding-bottom: 10px;
+}
+.dmo_flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.dmo_salebtn{
+    margin-right: 10px;
+}
+.flex-dmo{
+    flex-direction: column;
+}
+.dmo_sctpad{
+    padding: 0;
+}
+.dmo_disabilitybtn{
+    display: flex;
+    align-items: center;
+    align-self: end;
+    margin-bottom: 8px;
+
+}
+.add-experience:hover {
+    background:  rgb(73, 43, 194);
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px  rgb(73, 43, 194);
+}
+.job_salary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.job_rs{
+    background-color: #dee2e6;
+    padding: 6px 10px;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    left: 0px;
+
+}
+.job_lpa{
+    background-color: #dee2e6;
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    right: 0px;
+
+}
+/* .cursor-color{
+    color: blue;
+    display: inline-block;
+} */

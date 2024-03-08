@@ -1,0 +1,33 @@
+.card {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.09);
+  border: none;
+  padding: 25px 30px;
+  border-radius: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2px;
+}
+h5 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0px;
+  line-height: 1.5rem;
+}
+p span {
+  color: #8f8f8f;
+  font-weight: 400;
+}
+h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
