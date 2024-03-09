@@ -15,9 +15,6 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { authapi } from "../config/serverUrl";
-
-
-
 const ResetPassword = () => {
   const [otp, setOTP] = useState(["", "", "", "", "", ""]);
   const inputRefs = [
@@ -36,7 +33,7 @@ const ResetPassword = () => {
   const [loading, setLoading] = useState(false);
   const [otpSent, setOtpSent] = useState(false);
   const [Error, setError] = useState("");
-
+  const [visiable,setvisiable] = useState(false)
   // reset password usestate
   const [reset, setreset] = useState({ password: "", confirm_password: "" });
   const [formErrors, setFormErrors] = useState({
@@ -82,7 +79,7 @@ const ResetPassword = () => {
       return;
     }
     setLoading(true);
-
+    setvisiable(true)
     try {
       const res = await axios.post(`${authapi}/auth/email_OTP`, {
         email: emailid,
@@ -149,9 +146,9 @@ const ResetPassword = () => {
     if (!values.password) {
       errors.password = "Password is required";
     } else if (values.password.length < 15) {
-      errors.password = "Password must be at least 6 characters long";
+      errors.password = "Password must be at least 15 characters long";
     } else if (values.password.length > 15) {
-      errors.password = "Password cannot exceed more than 6 characters";
+      errors.password = "Password cannot exceed more than 15 characters";
     }
 
     if (!values.confirm_password) {
@@ -275,6 +272,9 @@ const ResetPassword = () => {
     }
   };
 
+  
+  
+
   return (
     <div>
       <div className="Auth-form-container">
@@ -295,15 +295,16 @@ const ResetPassword = () => {
               style={{ height: "450px", overflowY: "scroll" }}
             >
               <h4>Mobile Number Verification</h4>
-              <p>
-                Please enter your Email Id to receive verification code
+              <p style={{ color: "#8B8B8B" }}>
+                Please enter your Email Id to receive
+                verification code
               </p>
               <div className="row align-items-center">
-                <div className="col-md-8 col-12">
+                <div className="col-lg-7 col-md-8 col-12">
                   <div className="input-group mt-3">
                     <div className="input-group-prepend">
                       <span className="input-group-text">
-                        <Phone size={28} />
+                        <Envelope size={28} />
                       </span>
                     </div>
                     <input
@@ -316,14 +317,16 @@ const ResetPassword = () => {
                     />
                   </div>
                 </div>
-                <div className="col-md-4 col-12">
+                <div className="col-lg-3 col-md-4 col-12">
                   <button
-                    className="btn btn-verify px-lg-4 px-md-2 px-4 mt-3"
+                    className="btn btn-verify btn-verify  mt-3"
                     onClick={handlegetOTP}
                     disabled={loading || otpSent}
                     style={{
+                      // fontSize:"11px",
                       backgroundColor: otpSent ? "green" : "",
                       color: otpSent ? "white" : "",
+                      width: "113px",
                     }}
                   >
                     {loading ? (
@@ -346,12 +349,12 @@ const ResetPassword = () => {
               </div>
               <h4 className="mt-5">OTP Verification</h4>
               <p style={{ color: "#8B8B8B" }}>
-                Enter the 6 digit code received on your Phone number
+                   Enter the 6 digit code received on your Email Id
                 <span
                   className="ms-2"
                   style={{ color: "#030303", fontWeight: "500" }}
                 >
-                  (+91 90000123456)
+                 {visiable? emailid : ""}
                 </span>
                 <div className="my-3 d-flex justify-content-center">
                   {otp.map((digit, index) => (
