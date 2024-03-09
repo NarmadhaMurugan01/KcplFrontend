@@ -66,7 +66,7 @@ const Login = () => {
         }
 
         if (data.code == 200) {
-          navigate("/");
+          navigate("/main");
         }
       } catch (error) {
         console.log(error);
