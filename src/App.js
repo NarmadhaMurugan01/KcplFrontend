@@ -37,7 +37,7 @@ function App() {
           <Route path="/ap" element={<DynamicInputFields />} />
           <Route path="/register" element={<Register />} />
           <Route path="/resetpassword" element={<ResetPassword />} />
-          <Route path="/main" element={<Main />}>
+          <Route path="/" element={<Main />}>
           <Route index element={<Maintainence />} />
             <Route path="/main/jobs" element={<Job />} />
             <Route path="/main/ContactUs" element={<ContactUs />} />
