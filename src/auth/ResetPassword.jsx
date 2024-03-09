@@ -145,10 +145,9 @@ const ResetPassword = () => {
 
     if (!values.password) {
       errors.password = "Password is required";
-    } else if (values.password.length < 15) {
-      errors.password = "Password must be at least 15 characters long";
-    } else if (values.password.length > 15) {
-      errors.password = "Password cannot exceed more than 15 characters";
+    } 
+    else if (values.password.length > 20 ) {
+      errors.password = "Password cannot exceed more than 20 characters";
     }
 
     if (!values.confirm_password) {
