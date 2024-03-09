@@ -66,7 +66,7 @@ const Login = () => {
         }
 
         if (data.code == 200) {
-          navigate("/main");
+          navigate("/");
         }
       } catch (error) {
         console.log(error);
@@ -96,6 +96,11 @@ const Login = () => {
 
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
+
+  const handelback = (e)=>{
+    e.preventDefault()
+    navigate('/')
+  }
 
   return (
     <div className="Auth-form-container">
@@ -197,6 +202,12 @@ const Login = () => {
                 New user registration
               </Link>
             </p>
+ 
+            <button className="btn btn-prime" onClick={handelback}>
+              
+              Back
+            </button>
+
           </div>
         </div>
       </form>

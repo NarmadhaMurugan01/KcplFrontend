@@ -296,8 +296,7 @@ const ResetPassword = () => {
             >
               <h4>Mobile Number Verification</h4>
               <p>
-                Please enter your registered Mobile number to receive
-                verification code
+                Please enter your Email Id to receive verification code
               </p>
               <div className="row align-items-center">
                 <div className="col-md-8 col-12">
