@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./login.css";
 import logo from "../assets/images/KodukkuLogo.svg";
-import { UserCircle, LockOpen } from "@phosphor-icons/react";
+import { UserCircle, LockOpen,CaretLeft } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { loginUser } from "../react-redux/actions";
@@ -11,6 +11,7 @@ import { useDispatch } from "react-redux";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 import { authapi } from "../config/serverUrl";
+
 const Login = () => {
   const initialValue = { email: "", password: "" };
   const [value, setValue] = useState(initialValue);
@@ -106,11 +107,16 @@ const Login = () => {
     <div className="Auth-form-container">
       <form className="Auth-form" onSubmit={handleSubmit}>
         <div className="Auth-form-content">
-          <div className="head ">
-            <h5 className="text-center" style={{ color: "#4A4A4A" }}>
-              Log in or Sign up
-            </h5>
-          </div>
+          <div className="head d-flex">
+              <Link to="/" style={{ color: "#4A4A4A" }}>
+                <CaretLeft size={28} />
+              </Link>
+              <div className="d-flex justify-content-center w-100">
+                <h5 className="text-center" style={{ color: "#4A4A4A" }}>
+                Log in or Sign up
+                </h5>
+              </div>
+            </div>
           <div className="content">
             <div className="title d-flex align-items-center justify-content-center mb-3">
               <img
