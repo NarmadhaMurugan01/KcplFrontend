@@ -520,7 +520,7 @@ const Register = () => {
             type="password"
             className="form-control"
             id="password"
-            placeholder="create password"
+            placeholder="Create password"
             onChange={handlesignup}
             value={data.password}
             style={{
@@ -548,7 +548,7 @@ const Register = () => {
             type="password"
             className="form-control"
             id="confirm_password"
-            placeholder="confirm password"
+            placeholder="Confirm password"
             value={data.confirm_password}
             onChange={handlesignup}
             style={{
